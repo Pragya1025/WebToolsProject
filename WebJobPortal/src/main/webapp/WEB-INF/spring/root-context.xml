@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		<bean id="userValidator" class="com.neu.edu.controller.UserValidator"/>
+		<bean id="jobValidator" class="com.neu.edu.controller.JobValidator"/>
+		<bean id="personValidator" class="com.neu.edu.controller.PersonValidator"/>
+		
+		<bean id="userDao" class="com.neu.edu.dao.UserDao"/>
+		<bean id="jobsDao" class="com.neu.edu.dao.JobsDao"/>
+		<bean id="jobSeekerDao" class="com.neu.edu.dao.JobSeekerDao"/>
+		<bean id="employeeDao" class="com.neu.edu.dao.EmployeeDao"/>
+</beans>
